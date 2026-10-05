@@ -27,5 +27,5 @@ app.get("/saludo", (req, res) => {
 
 // Iniciar servidor
 app.listen(3000, () => {
-    console.log("Servidor de Barbería Luck iniciado en http://localhost:3000");
+    console.log("Servidor de Barbería Luck iniciado en https://barberialuck.onrender.com");
 });
