@@ -19,16 +19,13 @@ export default function Login() {
 
         try {
 
-            const respuesta = await fetch("https://barberialuck.onrender.com", {
-                method: "POST",
+            const respuesta = await fetch('https://barberialuck.onrender.com/api/usuarios/login', {
+                method: 'POST',
                 headers: {
-                    "Content-Type": "application/json"
+                    'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    email,
-                    password
-                })
-            });
+                body: JSON.stringify(datosFormulario)
+            })
 
             const datos = await respuesta.json();
 
