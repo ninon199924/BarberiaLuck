@@ -10,6 +10,13 @@ const profesionalesRoutes = require("./routes/profesionalesRoutes");
 
 const app = express();
 
+const cors = require('cors');
+
+app.use(cors({
+  origin: ['https://barberia-luck.vercel.app', 'http://localhost:5173'],
+  credentials: true
+}));
+
 // Middlewares
 app.use(cors());
 app.use(express.json());
