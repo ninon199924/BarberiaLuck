@@ -1,0 +1,185 @@
+/* =========================================
+   PANEL DE ADMINISTRACIÓN
+   ========================================= */
+
+.Administracion {
+    width: 92%;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* Título */
+
+.Administracion h1 {
+    text-align: center;
+    color: #d4af37;
+    font-size: 38px;
+    margin-bottom: 35px;
+    text-shadow: 0 2px 8px rgba(212, 175, 55, 0.25);
+}
+
+/* Contenedor de la tabla */
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Tabla */
+
+.Administracion table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 950px;
+}
+
+/* Encabezados */
+
+.Administracion th {
+    background: #1e293b;
+    color: #d4af37;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    padding: 17px 15px;
+    border-bottom: 2px solid #d4af37;
+    white-space: nowrap;
+}
+
+/* Celdas */
+
+.Administracion td {
+    color: #f1f5f9;
+    padding: 16px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Filas */
+
+.Administracion tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.Administracion tbody tr:hover {
+    background-color: rgba(212, 175, 55, 0.08);
+}
+
+/* Última fila */
+
+.Administracion tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================================
+   ESTADOS
+   ========================================= */
+
+.estado {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.estado-pendiente {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.estado-confirmado {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+/* =========================================
+   BOTONES
+   ========================================= */
+
+.boton-confirmar,
+.boton-cancelar {
+    border: none;
+    border-radius: 8px;
+    padding: 9px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 7px;
+}
+
+/* Confirmar */
+
+.boton-confirmar {
+    background-color: #16a34a;
+    color: white;
+}
+
+.boton-confirmar:hover {
+    background-color: #15803d;
+    transform: translateY(-1px);
+}
+
+/* Cancelar */
+
+.boton-cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.boton-cancelar:hover {
+    background-color: #b91c1c;
+    transform: translateY(-1px);
+}
+
+/* Confirmado */
+
+.confirmado-texto {
+    color: #4ade80;
+    font-weight: 700;
+}
+
+/* =========================================
+   MENSAJES
+   ========================================= */
+
+.Administracion > p {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 17px;
+    padding: 40px;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .Administracion {
+        width: 95%;
+        padding: 15px;
+        margin: 25px auto;
+    }
+
+    .Administracion h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .tabla-contenedor {
+        border-radius: 12px;
+    }
+
+}

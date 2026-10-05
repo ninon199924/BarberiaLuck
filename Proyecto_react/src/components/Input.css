@@ -1,0 +1,33 @@
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.5rem;
+
+}
+
+.input-group input{
+
+    padding:1rem;
+
+    border-radius:10px;
+
+    border:2px solid transparent;
+
+    background:#2a2a2a;
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:var(--color-primary);
+
+    outline:none;
+
+}

@@ -1,0 +1,221 @@
+/* Fondo de la página */
+.registro-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #111111, #1f1f1f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Tarjeta del formulario */
+.registro-form {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Título */
+.registro-form h2 {
+    text-align: center;
+    color: #111111;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+/* Inputs */
+.registro-form input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.registro-form input:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+/* Grupo contraseña */
+.password-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.password-group input {
+    flex: 1;
+}
+
+.password-group button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: #d4af37;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.password-group button:hover {
+    transform: scale(1.05);
+}
+
+/* Botón principal */
+.btn-registrar {
+    background: #d4af37;
+    color: #111;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-registrar:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(212,175,55,.35);
+}
+
+.btn-registrar:disabled {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+/* Mensajes */
+.error {
+    background: #ffe5e5;
+    color: #b30000;
+    border: 1px solid #ffb3b3;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.exito {
+    background: #e7ffe8;
+    color: #147a14;
+    border: 1px solid #9de09d;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Link al login */
+.registro-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.registro-form a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-form a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+
+    .registro-form {
+        padding: 25px;
+    }
+
+    .registro-form h2 {
+        font-size: 26px;
+    }
+
+    .password-group {
+        gap: 8px;
+    }
+
+    .password-group button {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+.error-text {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.fortaleza {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fortaleza.débil {
+    color: #d32f2f;
+}
+
+.fortaleza.media {
+    color: #f9a825;
+}
+
+.fortaleza.fuerte {
+    color: #2e7d32;
+}
+
+.barra-password {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.nivel {
+    height: 100%;
+    width: 0%;
+    transition: .3s;
+}
+
+.nivel.debil {
+    width: 33%;
+    background: #d32f2f;
+}
+
+.nivel.media {
+    width: 66%;
+    background: #f9a825;
+}
+
+.nivel.fuerte {
+    width: 100%;
+    background: #2e7d32;
+}
+
+.info-text{
+    color:#555;
+    font-size:14px;
+}
+
+.success-text{
+    color:#2e7d32;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.error-text{
+    color:#d32f2f;
+    font-size:14px;
+    font-weight:bold;
+}

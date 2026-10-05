@@ -1,0 +1,83 @@
+.mis-turnos {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.mis-turnos h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.turnos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.turno-card {
+    background-color: white;
+    color: #111827;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.turno-card h2 {
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.turno-card p {
+    color: #374151;
+    margin: 8px 0;
+}
+
+.turno-card strong {
+    color: #111827;
+}
+
+.estado {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.estado-pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.estado-confirmado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.estado-cancelado {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.boton-cancelar {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    font-size: 15px;
+}
+
+.boton-cancelar:hover {
+    opacity: 0.85;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    padding: 30px;
+}

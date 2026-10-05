@@ -1,0 +1,136 @@
+.login-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#111;
+
+    padding:20px;
+
+}
+
+.login-card{
+
+    width:100%;
+
+    max-width:420px;
+
+    background:#1f1f1f;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 25px rgba(0,0,0,.35);
+
+}
+
+.login-card h1{
+
+    text-align:center;
+
+    color:#D4AF37;
+
+    margin-bottom:10px;
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.login-card label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+}
+
+.login-card input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    border:none;
+
+    background:#2d2d2d;
+
+    color:white;
+
+}
+
+.password-box{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.password-box button{
+
+    width:55px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.btn-login{
+
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    background:#D4AF37;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #d4af37;
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.forgot-password:hover {
+    color: #facc15;
+    text-decoration: underline;
+}
