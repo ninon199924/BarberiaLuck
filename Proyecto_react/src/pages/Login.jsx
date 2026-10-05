@@ -19,7 +19,7 @@ export default function Login() {
 
         try {
 
-            const respuesta = await fetch('https://barberialuck.onrender.com/api/usuarios/login', {
+            const respuesta = await fetch('https://barberialuck.onrender.com/usuarios/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
