@@ -101,11 +101,11 @@ export default function Login() {
                 </button>
 
                 <Link
-    to="/Recuperar_password"
-    className="forgot-password"
->
-    ¿Olvidaste tu contraseña?
-</Link>
+                    to="/Recuperar_password"
+                    className="forgot-password"
+                >
+                    ¿Olvidaste tu contraseña?
+                </Link>
 
             </form>
 
